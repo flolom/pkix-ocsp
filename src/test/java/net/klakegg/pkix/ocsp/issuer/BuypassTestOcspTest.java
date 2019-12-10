@@ -32,6 +32,6 @@ public class BuypassTestOcspTest {
         Assert.assertEquals(response.getUri(), URI.create("http://ocsp.test4.buypass.no/ocsp/BPClass3T4CA3"));
         Assert.assertEquals(response.getSerialNumber(), new BigInteger("1554383620002867819762479"));
         Assert.assertNotNull(response.getThisUpdate());
-        Assert.assertNull(response.getNextUpdate());
+        Assert.assertNotNull(response.getNextUpdate());
     }
 }
